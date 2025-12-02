@@ -291,3 +291,113 @@ h1, h2, h3, nav a {
     width: 100%;
     box-sizing: border-box;
 }
+
+/* ==========================================
+   MOBILE UPGRADE — READABILITY FIX
+   (Overrides shrink behavior)
+========================================== */
+
+@media (max-width: 850px) {
+
+    /* NAV BAR */
+    .nav-links a {
+        font-size: 1.4rem !important;
+        margin: 8px 12px;
+    }
+
+    /* HERO TEXT */
+    .hero h2 {
+        font-size: 2.2rem !important;
+        padding: 12px 24px;
+    }
+
+    /* HEADINGS */
+    h2 {
+        font-size: 2.1rem !important;
+    }
+    h3 {
+        font-size: 1.7rem !important;
+    }
+
+    /* PARAGRAPHS */
+    .section p,
+    .info-card p {
+        font-size: 1.25rem !important;
+        line-height: 1.7;
+        width: 90%;
+    }
+
+    /* INFO CARDS */
+    .info-card {
+        padding: 28px !important;
+    }
+
+    /* FORM CARD */
+    .contact-form-card {
+        padding: 30px !important;
+    }
+    .contact-form-card label {
+        font-size: 1.2rem !important;
+    }
+    .contact-form-card input,
+    .contact-form-card textarea {
+        font-size: 1.1rem !important;
+        padding: 14px !important;
+    }
+    .contact-form-card button {
+        font-size: 1.2rem !important;
+        padding: 16px 32px !important;
+    }
+}
+
+/* ==========================================
+   SMALL PHONES (iPhone SE, Galaxy Mini, etc.)
+========================================== */
+@media (max-width: 500px) {
+
+    /* NAVIGATION */
+    .nav-links a {
+        font-size: 1.5rem !important;
+        margin: 10px 15px;
+    }
+
+    /* HERO */
+    .hero h2 {
+        font-size: 1.9rem !important;
+        padding: 10px 20px;
+    }
+
+    /* HEADINGS */
+    h2 {
+        font-size: 1.9rem !important;
+    }
+    h3 {
+        font-size: 1.5rem !important;
+    }
+
+    /* PARAGRAPH TEXT */
+    .section p,
+    .info-card p {
+        font-size: 1.2rem !important;
+        width: 95%;
+    }
+
+    /* CARDS */
+    .info-card,
+    .contact-form-card {
+        padding: 22px !important;
+    }
+
+    /* INPUTS */
+    .contact-form-card input,
+    .contact-form-card textarea {
+        padding: 14px !important;
+        font-size: 1.1rem !important;
+    }
+
+    /* BUTTONS */
+    .contact-form-card button {
+        font-size: 1.2rem !important;
+        padding: 14px 28px !important;
+    }
+}
