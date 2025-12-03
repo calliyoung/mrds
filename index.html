@@ -51,10 +51,17 @@
 
 <!-- ================= MENU IMAGE ================= -->
 <section id="menu" class="section">
-    <h2>Our Menu</h2>
-    <div class="divider"></div>
+  <h2>Our Menu</h2>
+  <div class="divider"></div>
 
-    <img src="menu.png" class="menu-image" alt="Restaurant Menu">
+  <picture>
+    <!-- Mobile version -->
+    <source srcset="menu-mobile.png" media="(max-width: 700px)">
+    <!-- Desktop version -->
+    <source srcset="menu-desktop.png" media="(min-width: 701px)">
+    <!-- Fallback -->
+    <img src="menu-desktop.png" alt="Restaurant Menu" class="menu-image">
+  </picture>
 </section>
 
 
@@ -129,6 +136,7 @@
 
 </body>
 </html>
+
 
 
 
