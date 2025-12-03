@@ -126,13 +126,14 @@ body {
 
 /* ===== MENU IMAGE ===== */
 .menu-image {
-  width: 90%;
-  max-width: 950px;
+  width: 100%;        /* always fill available width */
+  max-width: 100%;    /* prevent overflow */
+  height: auto;       /* keep aspect ratio */
   display: block;
-  margin: 30px auto;
-  border: 6px solid #d40000;
+  margin: 20px auto;
+  /*border: 6px solid #d40000;
   box-shadow: 0 0 30px rgba(0,0,0,0.25);
-  border-radius: 6px;
+  border-radius: 6px; */
 }
 
 /* ===== CONTACT ===== */
@@ -270,33 +271,8 @@ body {
   .contact-form-card {
     padding: 20px;
   }
-}
-.menu-image {
-  width: 90%;
-  max-width: 950px;
-  display: block;
-  margin: 30px auto;
-  border: 6px solid #d40000;
-  box-shadow: 0 0 30px rgba(0,0,0,0.25);
-  border-radius: 6px;
-}
-.menu-image {
-  width: 100%;        /* always fill available width */
-  max-width: 100%;    /* prevent overflow */
-  height: auto;       /* keep aspect ratio */
-  display: block;
-  margin: 20px auto;
-  border: 6px solid #d40000;
-  box-shadow: 0 0 30px rgba(0,0,0,0.25);
-  border-radius: 6px;
-}
-@media (max-width: 500px) {
-  .menu-image {
-    border: 3px solid #d40000;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  }
   .stars {
     width: 180px;   /* even smaller for very narrow screens */
   }
-
 }
+
