@@ -39,7 +39,7 @@ body {
 }
 
 .logo {
-  width: 100px;
+  width: 250px;
   height: auto;
   object-fit: contain;
   padding-bottom: 5px;
@@ -72,7 +72,7 @@ body {
 /* ===== HERO SECTION ===== */
 .hero {
   min-height: 45vh;
-  background-image: url('hero.png');
+  /*background-image: url('hero.png');*/
   background-size: cover;
   background-position: center;
   display: flex;
@@ -82,11 +82,11 @@ body {
 }
 
 .hero h2 {
-  background: rgba(0,0,0,0.65);
+  /* background: rgba(0,0,0,0.65); */
   color: white;
   padding: 20px 40px;
   font-size: 3rem;
-  border-radius: 6px;
+  /* border-radius: 6px; */
   letter-spacing: 3px;
   text-shadow: 0 0 10px black;
 }
@@ -131,9 +131,6 @@ body {
   height: auto;       /* keep aspect ratio */
   display: block;
   margin: 20px auto;
-  /*border: 6px solid #d40000;
-  box-shadow: 0 0 30px rgba(0,0,0,0.25);
-  border-radius: 6px; */
 }
 
 /* ===== CONTACT ===== */
@@ -159,7 +156,7 @@ body {
 }
 
 .info-card {
-  background: #ffffff;
+  background: #e1e0d7;
   padding: 25px;
   border-radius: 10px;
   border-left: 6px solid #d40000;
@@ -250,7 +247,7 @@ body {
     font-size: 1.5rem;
   }
   .logo {
-    width: 70px;
+    width: 100px;
   }
   .stars {
     width: 250px;   /* smaller size for tablets/phones */
@@ -271,8 +268,10 @@ body {
   .contact-form-card {
     padding: 20px;
   }
+}
+@media (max-width: 500px) {
   .stars {
     width: 180px;   /* even smaller for very narrow screens */
   }
-}
 
+}
