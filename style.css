@@ -72,7 +72,7 @@ body {
 /* ===== HERO SECTION ===== */
 .hero {
   min-height: 45vh;
-  /*background-image: url('hero.png');*/
+  background-image: url('hero.jpeg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -275,3 +275,4 @@ body {
   }
 
 }
+
